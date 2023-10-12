@@ -15,6 +15,8 @@ class BlackjackPlayer:
         プレイヤーの手札
     dealer_card: Card
         ディーラーの1枚目のカード
+    last_dealer_hand: [Card]
+        ディーラーが開いた手のリスト
     round: int
         デッキがシャッフルされてからのラウンド数
     
