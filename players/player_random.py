@@ -28,6 +28,8 @@ class BlackjackPlayer:
         プレイヤーの手札を記録する
     look_dealer_hand(card)
         ディーラーの1枚目のカードを記録する
+    finish_dealer_hand(card)
+        ディーラーが開いたカードを記録する
     input(message)
         プレイヤーがヒットかスタンドかの選択をする
     notify_result(result, bet_amount)
@@ -107,6 +109,16 @@ class BlackjackPlayer:
             ディーラーの1枚目のカードを表すCardクラスのインスタンス
         '''
         self.dealer_card = card # ディーラーの1枚目のカードを記録
+
+    def finish_dealer_hand(self, hand):
+        '''ディーラーが開いたカードを記録する
+
+        Parameters:
+        ----------
+        card: Card
+            ディーラーが開いたカードを表すCardクラスのインスタンス
+        '''
+        self.last_dealer_hand = hand.copy() # ディーラーが開いたカードを記録
 
     def input(self, message):
         ''' プレイヤーにヒットかスタンドを選択させる
