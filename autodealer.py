@@ -129,6 +129,8 @@ def game(Player):
                 else:
                     break
 
+        player.finish_dealer_hand(dealer_hand) # プレイヤーにディーラーの手札を見せる
+
         # ディーラーの手札の合計が21を超えたらバースト
         if Card.sum(dealer_hand) > 21:        
             printx("ディーラーがバーストしました。")
