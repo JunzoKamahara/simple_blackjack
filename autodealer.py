@@ -137,7 +137,7 @@ def game(Player):
             if not is_burst:
                 player_balance += bet_amount # プレイヤーの残高に賭け金を加算
                 player.notify_result("win", bet_amount) # プレイヤーに結果を通知
-                print(f"残高: ${player_balance}")
+                printx(f"残高: ${player_balance}")
                 turn_end()
                 continue
 
@@ -146,7 +146,7 @@ def game(Player):
                 printx("残高がゼロになりました。ゲームを終了します。")
                 return player_balance, turns
             else:
-                print(f"残高: ${player_balance}")
+                printx(f"残高: ${player_balance}")
                 turn_end()
                 continue
 
