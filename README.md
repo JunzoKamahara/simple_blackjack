@@ -10,3 +10,6 @@ playersフォルダにある.pyを読み込んで、プログラム毎に既定�
 playersフォルダの中のプレイヤープログラムは、BlackjackPlayerクラスでなければなりません。
 
 BlackjackPlayerクラスについては、ファイルの中を参照してください。
+
+授業タスクの進め方について：(by山口輝)
+[https://2370058.github.io/simple_blackjack/](https://2370058.github.io/simple_blackjack/)
